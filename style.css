@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    width: 95%;
+}
+
+.logo {
+    color: gold;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+.btn-nav {
+    border: 1px solid gold;
+    padding: 8px 16px;
+    color: gold;
+    border-radius: 4px;
+}
+
+.btn-nav:hover {
+    background: gold;
+    color: rgb(135, 127, 127);
+}
+
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5') center/cover;
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+    position: relative;
+    color: white;
+    padding-left: 50px;
+    max-width: 600px;
+}
+
+.btn {
+    text-decoration: solid;
+    color: gold;
+    border: 2px solid gold;
+    padding: 10px 20px;
+}
+
+.contact {
+    text-align: center;
+    padding: 60px;
+    background: black;
+    color: white;
+}
+
+.about {
+    text-align: center;
+    padding: 60px 20px;
+    background: #111;
+    color: white;
+}
+
+.about h2 {
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.reservation-page {
+    height: 100vh;
+    background-color: rgb(19, 6, 6);
+    background: url('https://cdn.prod.website-files.com/6376c6439438374074f4d8ff/63a360d2489797d2f5181f65_62eb26fd2bb561f0f52e8257_Screen%20Shot%202022-06-22%20at%205.57.25%20PM-p-1080.png ') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.reservation-page form {
+    background: rgba(8, 8, 8, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+.reservation-page input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.reservation-page button {
+    padding: 10px;
+    border: none;
+    background: rgb(7, 7, 7);
+    color: rgb(127, 123, 123);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reservation-page button:hover {
+    background: orange;
+}
